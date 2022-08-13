@@ -1,0 +1,203 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    width: 1400px;
+    background: #EFE6E4;
+}
+.header {
+    background-image: url(img/header.png);
+}
+
+.logo-item {
+    width: 25.34px;
+    height: 25px;
+}
+.logo-text {
+    width: 64.87px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #533738;
+}
+
+.top-menu {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;   
+    color: #533738;
+}
+.header-h1 {
+    width: 534.02px;
+    height: 186px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: #533738;
+}
+.header-center-text {
+width: 493.57px;
+height: 90px;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: #533738;
+
+}
+.button {
+    background: #CC8B86;
+    padding-top: 25px;
+    padding-left: 67.91px;
+    padding-right: 65.88px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #533738;
+}
+
+.me-text {
+width: 136px;
+height: 50px;
+font-weight: 400;
+font-size: 40px;
+line-height: 50px;
+text-transform: uppercase;
+color: #533738;
+}
+.logo-egg {
+    width: 444.54px;
+    height: 572.39px;
+}
+.me-item {
+    width: 528px;
+    height: 330px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+.skills {
+    width: 1400px;
+    height: 273px;
+    background: #8D7370;
+}
+.skills-item{
+    float: left;
+}
+.skills-number {
+    width: 29px;
+    height: 62px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.work-h2 {
+    width: 332px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+}
+.studio { 
+    width: 488px;
+    height: 451px;
+    background: url(img/image_55.png) ;
+}
+.overlay{
+    background-color:rgba(100, 72, 69, 0.8);
+    display: none;
+    width: 488px;
+    height: 451px;
+    cursor: pointer;
+}
+.item-work:hover .overlay{
+  display: block;
+}
+.work-h3 { 
+    width: 270px;
+    height: 111px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.work-text{
+    width: 418px;
+    height: 150px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.living-room{
+    width: 692px;
+    height: 451px;
+}
+.kitchen {
+    width: 692px;
+    height: 451px;
+}
+.bathroom {
+    width: 488px;
+    height: 451px;
+}
+.all-item {  
+    width: 224px;
+    height: 37px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #533738;
+}
+.all-logo {
+    width: 60px;
+    height: 0px;
+    border: 2px solid #533738;
+}
+.team {
+    background: #E2C4BA;
+}
+.team-item {
+    width: 320px;
+    height: 253px;
+    display: inline-block;
+}
+.team-text {
+    width: 320px;
+    height: 180px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+.team-h2 {
+    width: 419px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+}
+.work-item ol{
+    list-style-type: none;
+}
+
+.work-item-number{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: #8D7370;
+ 
+   text-align: center;
+}
+.work-item-number span{
+    display: block;
+    padding-top: 25px;
+}

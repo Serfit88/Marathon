@@ -5,103 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
      <div class="header-top">
         <div class="logo">
-            <img src="img/Без имени-1 1.png">
+            <img class="logo-item" src="img/Без имени-1 1.png">
             <span class="logo-text">SCANDI</span>
         </div>
         <div class="menu">
             <nav class="top-menu">
                 <ul>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Команда</a></li>
-                    <li><a href="#">Как мы работаем</a></li>
-                    <li><a href="#">Отзывы клиентов</a></li>
-                    <li><a href="#">Оставить заявку</a></li>
-                    <li><a href="#">+7(981) 857-46-24</a></li>
+                    <li><a href="#company">О компании</a></li>
+                    <li><a href="#work">Портфолио</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#work">Как мы работаем</a></li>
+                    <li><a href="#slider">Отзывы клиентов</a></li>
+                    <li><a href="#form">Оставить заявку</a></li>
+                    <li><a href="tel:+7(981) 857-46-24">+7(981) 857-46-24</a></li>
                 </ul>
             </nav>
 
         </div>
      </div>
      <div class="header-center">
-        <h1>Поможет сделать вашу квартиру уютнее</h1>
-        <p>Подбираем текстиль,мебель и аксессуары под ваш интерьер, находим магазины  и помогаем организовать доставку</p>
-        <button class="odziv">Оставить заявку</button>
+        <h1 class="header-h1">Поможет сделать вашу квартиру уютнее</h1>
+        <p class="header-center-text">Подбираем текстиль,мебель и аксессуары под ваш интерьер, находим магазины  и помогаем организовать доставку</p>
+        <button class="button">Оставить заявку</button>
      </div>
     </header>
     <main>
-     <section class="me">
-        <h2>О нас</h2>
+     <section id="company" class="me">
+        <h2 class="me-text">О нас</h2>
         <div class="logo-egg">
             <img src="img/Mask Group.png" alt="table" >
         </div>
-        <aside>
+        <aside class="me-item">
             <p>Премиальный европейский текстиль — одно из самых  главных направлений работы коллектива. Создавать  неповторимые интерьеры для наших дорогих  клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии. 
                 Наш коллектив сделает все, чтобы после  сотрудничества с нами,  Вам было приятно сказать:
                 « Да! Это именно то, что действительно достойно моего  дома!»
             </p>
          </aside>
         <div class="skills">
-         <div class="skills-item"><p>5 лет опыта </p></div>
-         <div class="skills-item"><p>100 проектов</p></div>
-         <div class="skills-item"><p>10  наград</p></div>
+         <div class="skills-item"> <p class="skills-number">5</p><p class="skills-text">лет опыта </p></div>
+         <div class="skills-item"><p class="skills-number">100</p><p class="skills-text">проектов</p></div>
+         <div class="skills-item"><p class="skills-number">10</p><p class="skills-text">наград</p></div>
         </div>
      </section>
-     <section class="work">
-        <h2>Наши работы</h2>
-        <div class="studio">
-            <h3>Квартира-студия 30 кв.м</h3>
-            <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались 
+     <section id="work" class="work">
+        <h2 class="work-h2">Наши работы</h2>
+        <div class="studio item-work">
+           
+            <h3 class="work-h3">Квартира-студия 30 кв.м</h3>
+            <p class="work-text">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались 
                 на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам  островов Бали.
             </p>
+            <div class="overlay"> </div>
         </div>
-       <div class="kitchen"> 
+       <div class="kitchen item-work"> 
+       
             <img src="img/Rectangle 134.png" alt="kitchen">
+       
         </div>
-       <div class="living room">
+       <div class="living-room item-work">
             <img src="img/Rectangle 132.png" alt="living room">
         </div>
-       <div class="bathroom">
+       <div class="bathroom item-work">
             <img src="img/Rectangle 88.png" alt="bathroom">
         </div>
        <div class="all">
-            <p>Смотреть ещё</p> 
-            <img src="img/Arrow 3.svg" alt="arrow">
+            <p class="all-item">Смотреть ещё</p> 
+            <img class="logo" src="img/Arrow 3.svg" alt="arrow">
         </div>
      </section>
-     <section class="team">
+     <section id="team" class="team">
         <h2>Команда</h2>
         <div class="team-item">
             <img src="img/женщ(1).png" alt="woman" >
-            <p>Это Маша, наш главный дизайнер. Она отвечает за  дизайн-проект, приезжает к вам домой, общается 
+            <p  class="team-text">Это Маша, наш главный дизайнер. Она отвечает за  дизайн-проект, приезжает к вам домой, общается 
                 и помогает сделать вашу  квартиру красивой и уютной.
             </p>
         </div>
         <div class="team-item">
             <img src="img/женщ (2).png" alt="woman">
-            <p>С нашим менеджером Сашей вы  познакомитесь в первую  очередь. Она проконсультирует вас, соберёт все документы
+            <p  class="team-text">С нашим менеджером Сашей вы  познакомитесь в первую  очередь. Она проконсультирует вас, соберёт все документы
                 и ответит на все вопросы.
             </p>
         </div>
         <div class="team-item">
             <img src="img/женщ (3).png" alt="woman">
-            <p>Катя тоже занимается дизайном.
+            <p class="team-text">Катя тоже занимается дизайном.
                 Она всегда находит общий язык
                 с клиентами и точно знает,
                 как обустроить дом так, чтобывам понравилось.
             </p>
         </div>
-        <h2>Как мы работаем</h2>
+        <h2 class="team-h2">Как мы работаем</h2>
         <div class="How me work">
             <div class="work-item">
                 <ol>
-                    <li>Знакомимся, выезжаем
-                        на объект, утверждаем концепцию, подписываем договор.</li>
+                    <li>
+                        <p class="work-item-number"><span> 1</span> </p>
+                       <p> Знакомимся, выезжаем
+                        на объект, утверждаем концепцию, подписываем договор.
+                    </p>
+                    </li>
                     <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-
                         визуализацию.</li>
                     <li>Находим нужные магазины, помогаем с доставкой
@@ -114,7 +126,7 @@
         </div>
         
      </section>
-     <section class="slider">
+     <section id="slider" class="slider">
         <h2>Отзывы</h2>
         <div class="slider-item">
          <div class="slider-item-text">
@@ -142,10 +154,10 @@
              <p>Оставьте свои контакты. Менеджер перезвонит
                  в удобное вам время и ответит на все вопросы.
              </p>
-            <form action="">           
+            <form id="form" action="">           
                 <p><input name="user" type="text" required placeholder="Ваше имя"></p>
                 <p><input name="number" type="number" required placeholder="Введите телефон"></p>
-                <p><input type="submit" value="Оставить заявку"></p>
+                <p><input type="submit" class="button" value="Оставить заявку"></p>
             </form>
         </div>
          <div class="footer-right">
