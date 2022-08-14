@@ -55,6 +55,7 @@ color: #533738;
     font-size: 20px;
     line-height: 24px;
     color: #533738;
+    border: none;
 }
 
 .me-text {
@@ -148,7 +149,7 @@ color: #533738;
     height: 451px;
 }
 .all-item {  
-    width: 224px;
+    /*width: 224px;*/
     height: 37px;
     font-weight: 500;
     font-size: 30px;
@@ -162,6 +163,16 @@ color: #533738;
 }
 .team {
     background: #E2C4BA;
+}
+.team-item-text {
+    width: 224px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+
 }
 .team-item {
     width: 320px;
@@ -200,4 +211,125 @@ color: #533738;
 .work-item-number span{
     display: block;
     padding-top: 25px;
+}
+.work-item-text {
+    width: 285px;
+    height: 120px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #533738;
+}
+.slider-h2 {
+    width: 191px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #533738;
+}
+.slider-item-best-text {
+    width: 407px;
+    height: 335px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+
+.slider-item-name {
+    width: 180px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+.slider-item-img {
+    width: 407px;
+}
+
+.right{
+    width: 72px;
+    height: 72px;
+    background: #CC8B86;
+    border: none;
+    border-radius: 50px;
+
+}
+.left{
+    width: 72px;
+    height: 72px;
+    background: #CC8B86;
+    border-radius: 50px;
+    border: none;
+   
+    
+}
+.footer-left-right {
+    width: 1400px;
+    background: #8D7370;
+}
+.footer-right {
+    width: 590px;
+    height: 624px;
+}
+.footer-h2 {
+    width: 474px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-text {
+    width: 507px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.form-name {
+    width: 508px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background: #8D7370;
+}
+input[type=text]::placeholder {
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+}
+.footer-bottom-number {
+    width: 161px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+.footer-bottom-place {
+    width: 460px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
+}
+
+.footer-bottom-name {
+    width: 167px;
+    height: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #533738;
 }

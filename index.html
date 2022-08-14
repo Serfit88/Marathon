@@ -78,12 +78,12 @@
             <img src="img/Rectangle 88.png" alt="bathroom">
         </div>
        <div class="all">
-            <p class="all-item">Смотреть ещё</p> 
-            <img class="logo" src="img/Arrow 3.svg" alt="arrow">
+            <p class="all-item">Смотреть ещё <img class="logo" src="img/Arrow 3.svg" alt="arrow"></p> 
+            
         </div>
      </section>
      <section id="team" class="team">
-        <h2>Команда</h2>
+        <h2 class="team-item-text">Команда</h2>
         <div class="team-item">
             <img src="img/женщ(1).png" alt="woman" >
             <p  class="team-text">Это Маша, наш главный дизайнер. Она отвечает за  дизайн-проект, приезжает к вам домой, общается 
@@ -110,16 +110,22 @@
                 <ol>
                     <li>
                         <p class="work-item-number"><span> 1</span> </p>
-                       <p> Знакомимся, выезжаем
+                       <p class="work-item-text"> Знакомимся, выезжаем
                         на объект, утверждаем концепцию, подписываем договор.
                     </p>
                     </li>
-                    <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-
-                        визуализацию.</li>
-                    <li>Находим нужные магазины, помогаем с доставкой
-                        и оплатой товаров.</li>
-                    <li>Воплощаем проект в жизнь:
-                        расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
+                    <li>
+                        <p class="work-item-number"><span> 2</span> </p>
+                        <p class="work-item-text">Подбираем мебель, текстиль, аксессуары. Делаем 3D-
+                        визуализацию. </p></li>
+                    <li>
+                        <p class="work-item-number"><span> 3</span> </p>
+                        <p class="work-item-text"> Находим нужные магазины, помогаем с доставкой
+                        и оплатой товаров. </p></li>
+                    <li>
+                        <p class="work-item-number"><span> 4</span> </p>
+                        <p class="work-item-text">Воплощаем проект в жизнь:
+                        расставляем мебель и цветы, вешаем шторы, находим места для мелочей </p></li>
                 </ol>
             
             
@@ -127,46 +133,54 @@
         
      </section>
      <section id="slider" class="slider">
-        <h2>Отзывы</h2>
+        <h2 class="slider-h2">Отзывы</h2>
+        <div class="slider-button">
+            <button class="left"> <img src="img/left.png" alt="arrow"> </button>
+            </div>
         <div class="slider-item">
-         <div class="slider-item-text">
-            <p>«Восторг! Спасибо, за комфортную жизнь. 
-                 Очень рада, что выбрала вашу студию для  украшения своего дома. 
-                Работа шла быстро, было очень приятно  общаться и взаимодествовать 
-                с сотрудниками. Не ожидала, что это будет  так легко! 
-                
-                Буду советовать и своим друзьям к вам обращаться!» 
-            </p>
-          <p> АННА БЕЛОВСКАЯ</p>
+            <div class="slider-item-text">
+                <p class="slider-item-best-text">«Восторг! Спасибо, за комфортную жизнь. 
+                    Очень рада, что выбрала вашу студию для  украшения своего дома. 
+                    Работа шла быстро, было очень приятно  общаться и взаимодествовать 
+                    с сотрудниками. Не ожидала, что это будет  так легко! 
+                    
+                    Буду советовать и своим друзьям к вам обращаться!» 
+                </p>
+            <p class="slider-item-name"> АННА БЕЛОВСКАЯ</p>
+            </div>
+            <div class="slider-item-img">
+                <img src="img/Rectangle 141.png" alt="living room" >
+                <img src="img/Отзывы.png" alt="kitchen">
+            </div>
+          
         </div>
-          <div class="slider-item-img">
-            <img src="img/Rectangle 141.png" alt="living room" >
-            <img src="img/Отзывы.png" alt="kitchen">
-          </div>
-          <button class="left"> <img src="img/left.png" alt="arrow"> </button>
-          <button class="right"> <img src="img/right.png" alt="arrow" > </button>
-        </div>
+        <div class="slider-button">
+            <button class="right"> <img src="img/right.png" alt="arrow" > </button>
+           
+            </div>
      </section>
     </main>
     <footer>
+        <div class="footer-left-right">
         <div class="footer-left">
-            <h2>Оставить заявку</h2>
-             <p>Оставьте свои контакты. Менеджер перезвонит
+            <h2 class="footer-h2">Оставить заявку</h2>
+             <p class="footer-text">Оставьте свои контакты. Менеджер перезвонит
                  в удобное вам время и ответит на все вопросы.
              </p>
             <form id="form" action="">           
-                <p><input name="user" type="text" required placeholder="Ваше имя"></p>
-                <p><input name="number" type="number" required placeholder="Введите телефон"></p>
+                <p><input name="user" class="form-name" type="text" required placeholder="Ваше имя"></p>
+                <p><input name="number" class="form-name" type="text" required placeholder="Введите телефон"></p>
                 <p><input type="submit" class="button" value="Оставить заявку"></p>
             </form>
         </div>
          <div class="footer-right">
           <img src="img/image 54.png" alt="map">
          </div>
+        </div>
          <div class="footer-bottom">
-            <p>+7 (981) 857-46-24</p>
-            <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
-            <p>ИП Королёва А.А.</p>
+            <p class="footer-bottom-number">+7 (981) 857-46-24</p>
+            <p class="footer-bottom-place">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+            <p class="footer-bottom-name">ИП Королёва А.А.</p>
          </div>
     </footer>
     
