@@ -11,6 +11,12 @@ body {
 .logo-item {
     width: 25.34px;
     height: 25px;
+    grid-area: logo;
+    margin-left: 92.32px;
+    margin-top: 36px;
+}
+.header-top{
+    display:grid;
 }
 .logo-text {
     width: 64.87px;
@@ -19,6 +25,8 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #533738;
+    grid-area: title;
+    margin-top: 38px;
 }
 
 .top-menu {
@@ -26,6 +34,15 @@ body {
     font-size: 16px;
     line-height: 20px;   
     color: #533738;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 25.34px  64.87px 108.22px 96px 74.84px 145.64px 148.68px 137.55px 144.63px;
+    grid-template-rows: 20px;
+    grid-template-areas: "logo title company pholio team work slider form phone";
+    margin-top: 38px;
+}
+.company{
+    grid-area: company;
 }
 .header-h1 {
     width: 534.02px;
@@ -35,14 +52,20 @@ body {
     font-size: 50px;
     line-height: 62px;
     color: #533738;
+    margin-left: 184.08px;
+    margin-top: -152px;
+    margin-bottom: 0;
 }
 .header-center-text {
+    margin-top: 24px;
+    margin-left: 184.08px;
 width: 493.57px;
 height: 90px;
 font-weight: 400;
 font-size: 18px;
 line-height: 30px;
 color: #533738;
+margin-bottom: 0;
 
 }
 .button {
@@ -56,6 +79,21 @@ color: #533738;
     line-height: 24px;
     color: #533738;
     border: none;
+}
+.header-button{
+    margin-left: 182px;
+    background: #CC8B86;
+    padding-top: 25px;
+    padding-left: 67.91px;
+    padding-right: 65.88px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #533738;
+    border: none;
+    margin-bottom: 168px;
+    margin-top: 21px;
 }
 
 .me-text {
