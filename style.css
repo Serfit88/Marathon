@@ -5,7 +5,12 @@ body {
     background: #EFE6E4;
 }
 .header {
-    background-image: url(img/header.png);
+    background-image: url(img/MaskGroup.jpg);
+    height: 715px;
+
+}
+.logo{
+    display: flex;
 }
 
 .logo-item {
@@ -17,6 +22,7 @@ body {
 }
 .header-top{
     display:grid;
+    grid-template-columns: 230px 1fr;
 }
 .logo-text {
     width: 64.87px;
@@ -25,24 +31,45 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #533738;
-    grid-area: title;
-    margin-top: 38px;
+    margin-top: 40px;
 }
-
+.navigation-list{
+    display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  list-style-type: none;
+}
+.navigation-list a {
+    text-decoration: none;
+    color: #533738;
+}
 .top-menu {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;   
     color: #533738;
-    display: grid;
-    flex-direction: row;
-    grid-template-columns: 25.34px  64.87px 108.22px 96px 74.84px 145.64px 148.68px 137.55px 144.63px;
-    grid-template-rows: 20px;
-    grid-template-areas: "logo title company pholio team work slider form phone";
     margin-top: 38px;
+    display: flex;
+  justify-content: space-between;
 }
 .company{
-    grid-area: company;
+    margin-right: 26.44px;
+    left: 278px;
+}
+.pholio{
+    margin-right: 26px;
+}
+.team-items{
+    margin-right: 26.16px;
+}
+.work-items{
+    margin-right: 26.36px;
+}
+.slider-items{
+    margin-right: 26.32px;
+}
+.form-items{
+    margin-right:34.76px;
 }
 .header-h1 {
     width: 534.02px;
@@ -53,7 +80,7 @@ body {
     line-height: 62px;
     color: #533738;
     margin-left: 184.08px;
-    margin-top: -152px;
+   
     margin-bottom: 0;
 }
 .header-center-text {
@@ -80,6 +107,9 @@ margin-bottom: 0;
     color: #533738;
     border: none;
 }
+.button:hover{
+    cursor: pointer;
+}
 .header-button{
     margin-left: 182px;
     background: #CC8B86;
@@ -94,77 +124,139 @@ margin-bottom: 0;
     border: none;
     margin-bottom: 168px;
     margin-top: 21px;
+    width: 309.14px;
+    text-decoration: none;
+}
+.me {
+    grid-template-columns: 700px 700px;
+    grid-template-areas: "me me"
+                         "img text"
+                         "skills skills";
 }
 
 .me-text {
-width: 136px;
 height: 50px;
 font-weight: 400;
 font-size: 40px;
 line-height: 50px;
 text-transform: uppercase;
 color: #533738;
+grid-area: me;
+text-align: center;
 }
 .logo-egg {
-    width: 444.54px;
+    width: 507.54px;
     height: 572.39px;
+    grid-area: img;
+    margin-left: 182px;
+    float: left;
 }
 .me-item {
-    width: 528px;
+    width: 1181px;
     height: 330px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #533738;
+    grid-area: text;
 }
 .skills {
     width: 1400px;
     height: 273px;
     background: #8D7370;
+    display: flex;
+    justify-content: space-around;
+    grid-area: skills;
+    align-items: center;
 }
 .skills-item{
-    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.skills-number {
-    width: 29px;
+.skills-number-1 {
     height: 62px;
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
     color: #FFFFFF;
 }
+.skills-number-2 {
+    height: 62px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+    align-self: center;
+}
+.skills-number-3 {
+    height: 62px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+.skills-text{
+    height: 37px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 .work-h2 {
-    width: 332px;
     height: 50px;
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
     text-transform: uppercase;
     color: #533738;
+    text-align: center;
 }
 .studio { 
     width: 488px;
     height: 451px;
-    background: url(img/image_55.png) ;
+    position: relative;
+}
+.studio:hover .overlay{
+    position: absolute;
+    display: block;
+    background-color:rgba(100, 72, 69, 0.8);
+    }
+.studio:hover .hover-text{
+display: block;
+cursor: pointer;
+
+}
+.hover-text{
+    position: absolute;
+    top: 53px;
+    left: 61px;
+    text-align: center;
+    display: none;
 }
 .overlay{
-    background-color:rgba(100, 72, 69, 0.8);
     display: none;
     width: 488px;
     height: 451px;
     cursor: pointer;
 }
-.item-work:hover .overlay{
-  display: block;
-}
 .work-h3 { 
     width: 270px;
-    height: 111px;
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
     text-align: center;
     color: #FFFFFF;
+    margin-left: 45px;
+    
+}
+.work-png{
+    display:flex;
+  flex-wrap:wrap;
+  column-gap: 20px;
+  row-gap: 30px;
+  justify-content: center;
 }
 .work-text{
     width: 418px;
@@ -173,6 +265,8 @@ color: #533738;
     font-size: 18px;
     line-height: 30px;
     color: #FFFFFF;
+    text-align: start;
+    margin-left: -25px;
 }
 .living-room{
     width: 692px;
@@ -187,11 +281,14 @@ color: #533738;
     height: 451px;
 }
 .all-item {  
-    /*width: 224px;*/
     height: 37px;
     font-weight: 500;
     font-size: 30px;
     line-height: 37px;
+    color: #533738;
+}
+.all-item a{
+    text-decoration: none;
     color: #533738;
 }
 .all-logo {
@@ -201,21 +298,36 @@ color: #533738;
 }
 .team {
     background: #E2C4BA;
+   padding: 50px 100px 80px;
 }
 .team-item-text {
-    width: 224px;
     height: 50px;
     font-weight: 400;
     font-size: 40px;
     line-height: 50px;
     text-transform: uppercase;
     color: #533738;
+    text-align: center;
 
 }
 .team-item {
     width: 320px;
-    height: 253px;
     display: inline-block;
+}
+.team-top{
+    display: flex;
+  justify-content:center;
+
+}
+.team-item:nth-child(1){
+    margin-right: 38px;
+}
+.team-item:nth-child(2){
+    margin-right: 38px;
+}
+.team-bottom{
+    display: flex;
+  justify-content: space-between; 
 }
 .team-text {
     width: 320px;
@@ -226,7 +338,7 @@ color: #533738;
     color: #533738;
 }
 .team-h2 {
-    width: 419px;
+    text-align: center;
     height: 50px;
     font-weight: 400;
     font-size: 40px;
@@ -236,6 +348,8 @@ color: #533738;
 }
 .work-item ol{
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
 .work-item-number{
@@ -243,12 +357,16 @@ color: #533738;
     height: 70px;
     border-radius: 50px;
     background: #8D7370;
- 
+    margin-left: 100px;
    text-align: center;
 }
 .work-item-number span{
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
 .work-item-text {
     width: 285px;
@@ -259,21 +377,34 @@ color: #533738;
     text-align: center;
     color: #533738;
 }
+.work-item {
+    gap: 20px;
+}
+.slider-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .slider-h2 {
-    width: 191px;
     height: 50px;
     font-size: 40px;
     line-height: 50px;
     text-transform: uppercase;
     color: #533738;
+    text-align: center;
 }
 .slider-item-best-text {
     width: 407px;
-    height: 335px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #533738;
+}
+.slider-item{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .slider-item-name {
@@ -287,8 +418,16 @@ color: #533738;
 .slider-item-img {
     width: 407px;
 }
+.slider-item-img img:nth-child(1) {
+    margin-bottom: 24px;
+}
 
+.right,
+.left:hover{
+    cursor: pointer;
+}
 .right{
+    margin-left: 20px;
     width: 72px;
     height: 72px;
     background: #CC8B86;
@@ -297,6 +436,7 @@ color: #533738;
 
 }
 .left{
+    margin-right: 20px;
     width: 72px;
     height: 72px;
     background: #CC8B86;
@@ -305,11 +445,18 @@ color: #533738;
    
     
 }
+.footer-left{
+    margin-left: 182px;
+}
 .footer-left-right {
     width: 1400px;
     background: #8D7370;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
 }
 .footer-right {
+    margin-right: 101px;
     width: 590px;
     height: 624px;
 }
@@ -321,6 +468,7 @@ color: #533738;
     line-height: 50px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 24px;
 }
 
 .footer-text {
@@ -331,6 +479,8 @@ color: #533738;
     line-height: 30px;
     color: #FFFFFF;
     opacity: 0.6;
+    margin-bottom: 44px;
+    margin-top: 0;
 }
 .form-name {
     width: 508px;
@@ -339,6 +489,12 @@ color: #533738;
     border-bottom: 1px solid #FFFFFF;
     background: #8D7370;
 }
+.form-name:nth-child(1){
+    margin-bottom: 35px;
+}
+.form-name:nth-child(2){
+    margin-bottom: 31px;
+}
 input[type=text]::placeholder {
     height: 30px;
     font-weight: 400;
@@ -346,28 +502,32 @@ input[type=text]::placeholder {
     line-height: 30px;
     color: #F6EDE9;
 }
+.footer-bottom{
+    display: flex;
+}
 .footer-bottom-number {
-    width: 161px;
     height: 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #533738;
+    margin-left: 100px;
+    margin-right: 42px;
 }
 .footer-bottom-place {
-    width: 460px;
     height: 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #533738;
+    margin-right: 379px;
 }
 
 .footer-bottom-name {
-    width: 167px;
     height: 30px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     color: #533738;
+    margin-right: 100px;
 }
